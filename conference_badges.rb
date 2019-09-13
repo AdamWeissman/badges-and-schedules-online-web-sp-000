@@ -15,3 +15,7 @@ def assign_rooms(attendees)
   end
   return room_assignments
 end
+
+def printer(attendees)
+  attendees.collect.each_with_index {|attendee, room| [attendee, (room+1).to_s}
+end
