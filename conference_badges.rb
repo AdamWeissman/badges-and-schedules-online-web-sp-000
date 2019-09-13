@@ -10,10 +10,8 @@ end
 
 def assign_rooms(attendees)
   p_w_r = [] #person_with_room
-  until p_w_r.length == attendees.length
-    attendees.each_with_index do |name, room|
-      p_w_r << "Hello, #{name}! You'll be assigned to room #{room}!"
-    end
+  attendees.each_with_index do |name, room|
+    p_w_r << "Hello, #{name}! You'll be assigned to room #{room}!"
   end
   return p_w_r
 end
