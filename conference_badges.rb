@@ -1,5 +1,3 @@
-require pry
-# Write your code here.
 
 def badge_maker(name)
   return "Hello, my name is #{name}."
@@ -19,5 +17,4 @@ end
 
 def printer(attendees)
   attendees.each_with_index {|attendee, room| attendee, (room+1).to_s}
-  binding.pry
 end
