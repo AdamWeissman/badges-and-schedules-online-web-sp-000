@@ -1,5 +1,3 @@
-require pry
-
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
@@ -16,9 +14,7 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-binding.pry
-
 def printer(attendees)
-  batch_badge_creator(attendees).inspect
-  assign_rooms(attendees).inspect
+  batch_badge_creator(attendees).each {|thing| puts "#{thing}"}
+  assign_rooms(attendees).each {|thing| puts "#{thing}"}
 end
