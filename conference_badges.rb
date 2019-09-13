@@ -1,3 +1,4 @@
+require pry
 
 def badge_maker(name)
   return "Hello, my name is #{name}."
@@ -14,6 +15,8 @@ def assign_rooms(attendees)
   end
   return room_assignments
 end
+
+binding.pry
 
 def printer(attendees)
   batch_badge_creator(attendees).inspect
