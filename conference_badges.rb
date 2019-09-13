@@ -1,3 +1,4 @@
+require pry
 # Write your code here.
 
 def badge_maker(name)
@@ -18,4 +19,5 @@ end
 
 def printer(attendees)
   attendees.each_with_index.collect {|attendee, room| attendee, (room+1).to_s}
+  binding.pry
 end
