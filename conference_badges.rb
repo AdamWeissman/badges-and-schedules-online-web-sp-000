@@ -1,6 +1,7 @@
 # Write your code here.
 
 def batch_badge_creator(names)
-  names.collect {|name| "Hello, my name is #{name}."}
+  names_with_messages = []
+  names.collect {|name| names_with_messages << "Hello, my name is #{name}."}
 end
 
